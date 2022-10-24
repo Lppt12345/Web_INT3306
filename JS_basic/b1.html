@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userAgent = navigator.userAgent;
+        let browser;
+
+        if (userAgent.match(/chrome|chromium|crios/i)) {
+            browser = "Chrome";
+        } else if (userAgent.match(/firefox|fxios/i)) {
+            browser = "Firefox";
+        } else if (userAgent.match(/safari/i)) {
+            browser = "Safari";
+        } else if (userAgent.match(/opr\//i)) {
+            browser = "Opera";
+        } else if (userAgent.match(/edg/i)) {
+            browser = "Edge";
+        } else {
+            browser = "No browser detection";
+        }
+
+
+        document.write(
+            "My browser is " + browser + " .My screen height is " + screen.height + " .MY screen width is " + screen.width + " here"
+        );
+    </script>
+</body>
+
+</html>
