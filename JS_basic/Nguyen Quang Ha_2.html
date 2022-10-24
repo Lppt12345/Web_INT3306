@@ -13,11 +13,15 @@
         <label for="changeColor">Bấm để đổi màu</label>
     </form>
     <br>
-    <button type="button" onclick="changeColor()"  form="form1">Đổi màu</button>
+    <button type="button" onclick="changeColor()" form="form1">Đổi màu</button>
 
     <script>
         function changeColor() {
-            document.bgColor = "blue";
+            if (document.bgColor == document.body.style.backgroundColor) {
+                document.bgColor = "blue";
+            } else {
+                document.bgColor = document.body.style.backgroundColor;
+            }
         }
     </script>
 

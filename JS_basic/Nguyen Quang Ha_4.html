@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Bấm vào ảnh để mở tab Google
+    </p>
+
+    <p>
+        <img src="./image/pic3.jpg" alt="" width="500" height="500" id="image"
+            onclick="openGoogle()">
+    </p>
+
+    <form id="form1">
+        <label for="CloseGG">Bấm để đóng Tab</label>
+    </form>
+    <br>
+    <button type="button" onclick="closeGG()" form="form1">Close</button>
+
+    <script>
+        let windowGG;
+        function openGoogle() {
+            windowGG = window.open("https://www.google.com/");
+        }
+
+        var closeGG = function () {
+            windowGG.close();
+        }
+
+    </script>
+
+</body>
+
+</html>

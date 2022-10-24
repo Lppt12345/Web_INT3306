@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Bấm vào ảnh để đổi ảnh, bấm lần nữa để đổi lại
+    </p>
+
+    <p>
+        <img src="./image/pic1.jpg" alt="" width="500" height="500"
+            id="imageClickChange" onclick="changeImage()">
+    </p>
+
+    <script>
+        function changeImage() {
+            let image = document.getElementById("imageClickChange");
+            if (image.src.match("./image/pic1.jpg")) {
+                image.src = "./image/pic2.jpg";
+            } else {
+                image.src = "./image/pic1.jpg";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
