@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button name="jump" onclick= startJumping()>
+            Jump
+        </button>
+        <button name="stop" onclick=clearInterval(jumping)>
+            Stop
+        </button>
+        <br>
+        <br>
+        <img src="./assets/jump0.gif" alt="" width="200" height="200"
+            id="human">
+
+    </div>
+    <script>
+        let list = new Array(4)
+        let direction = "up"
+        let curPosition = 0
+        let jumping
+
+        list[0] = new Image()
+        list[1] = new Image()
+        list[2] = new Image()
+        list[3] = new Image()
+        list[0].src = "./assets/jump0.gif"
+        list[1].src = "./assets/jump1.gif"
+        list[2].src = "./assets/jump2.gif"
+        list[3].src = "./assets/jump3.gif"
+
+        function jump() {
+            if (direction == 'up') {
+                if (curPosition < 3) {
+                    curPosition++
+                } else {
+                    direction = 'down'
+                    curPosition--
+                }
+            } else {
+                if (curPosition > 0) {
+                    curPosition--
+                } else {
+                    direction = 'up'
+                    curPosition++
+                }
+            }
+            console.log(curPosition)
+            document.getElementById("human").src = list[curPosition].src
+        }
+
+        function startJumping() {
+            if (jumping) {
+                clearInterval(jumping)
+            }
+            jumping = setInterval(jump,100);
+        }
+
+
+    </script>
+</body>
+
+</html>

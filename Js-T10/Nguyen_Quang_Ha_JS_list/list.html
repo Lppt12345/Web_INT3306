@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <h1 style="text-align: center">DANH SÁCH CÔNG TY ĐỐI TÁC</h1>
+    <table id="tbl" style="margin: auto" >
+      <thead>
+        <tr>
+          <th>Chọn</th>
+          <th>Mã</th>
+          <th>Tên công ty</th>
+          <th>Địa chỉ website</th>
+          <th>Số hợp đồng đang thực hiện</th>
+          <th>Số hợp đồng sắp ký</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="0" class="oddr">
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">1</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">ECOPRO</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">https://www.eco-pro.vn</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">10</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">2</td>
+        </tr>
+        <tr id="1" class="oddr">
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">2</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">Wavin</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">https://www.wavin.com</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">9</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">0</td>
+        </tr>
+        <tr id="2" class="oddr" >
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">19</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">APL</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">https://www.apl.com</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">14</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">4</td>
+        </tr>
+        <tr id="3" class="oddr">
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">15</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">FB</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">https://www.FB.vn</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">1</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">8</td>
+        </tr>
+        <tr id="4" class="oddr">
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">23</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">GG</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">hhttps://www.GG.com</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">3</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">7</td>
+        </tr>
+        <tr id="5" class="oddr" >
+          <td><input type="checkbox" name="chk" /></td>
+          <td onclick="changeCheckBox(this.parentElement.id)">9</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">STKL</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">https://www.stkl.com</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">5</td>
+          <td onclick="changeCheckBox(this.parentElement.id)">2</td>
+        </tr>
+      </tbody>
+    </table>
+    <script type="text/javascript"  src="list.js"></script>
+</body>
+</html>

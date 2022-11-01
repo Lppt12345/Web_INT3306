@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form
+      name="Keypad"
+      action="#"
+    >
+
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <table
+                border="3"
+                cellpadding="2"
+                cellspacing="7"
+              >
+                <tbody>
+                  <tr>
+                    <td colspan="5" >
+                      <input
+                        name="outPut"
+                        type="Text"
+                        size="25"
+                        value="0"
+                        width="100%"
+                      />
+                    </td>                 
+                  </tr>
+                  
+                  <tr>
+                    <td>
+                      <input
+                        name="btnClear"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Clear.gif)"
+                        onclick="Clear()"
+                      />
+                    </td>
+                    <td>
+                      <input
+                      name="SQRT"
+                      type="button"
+                      
+                      value="    "
+                      style="background: url(assets/SQRT.gif)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                      name="Power"
+                      type="button"
+                      value="    "
+                      style="background: url(assets/Power.gif)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                      name="Exponent"
+                      type="button"
+                      value="    "
+                      style="background: url(assets/Exponent.gif)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                      name="Modulus"
+                      type="button"
+                      value="    "
+                      style="background: url(assets/Modulus.gif)"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                      name="Sin"
+                      type="button"
+                      value="    "
+                      style="background: url(assets/Sin.gif)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnSeven"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Seven.gif)"
+                        onclick="NumPressed(7)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnEight"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Eight.gif)"
+                        onclick="NumPressed(8)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnNine"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Nine.gif)"
+                        onclick="NumPressed(9)"
+                      />
+                    </td>
+
+                    <td>
+                      <input
+                        name="btnPlus"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Plus.gif)"
+                        onclick="Operation('+')"
+                      />
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        name="btnFour"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Cos.gif)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnFour"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Four.gif)"
+                        onclick="NumPressed(4)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnFive"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Five.gif)"
+                        onclick="NumPressed(5)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnSix"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Six.gif)"
+                        onclick="NumPressed(6)"
+                      />
+                    </td>
+                    
+                    
+                    <td>
+                      <input
+                        name="btnMinus"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Minus.gif)"
+                        onclick="Operation('-')"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        name="Tan"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Tan.gif)"
+                        
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnOne"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/One.gif)"
+                        onclick="NumPressed(1)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnTwo"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Two.gif)"
+                        onclick="NumPressed(2)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnThree"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Three.gif)"
+                        onclick="NumPressed(3)"
+                      />
+                    </td>
+                    
+                    
+                    <td>
+                      <input
+                        name="btnDivide"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Divide.gif)"
+                        onclick="Operation('/')"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input
+                        name="btnNeg"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Negate.gif)"
+                        onclick="Neg()"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnZero"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Zero.gif)"
+                        onclick="NumPressed(0)"
+                      />
+                    </td>
+                    <td>
+                      <input
+                        name="btnDecimal"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Decimal.gif)"
+                        onclick="Decimal()"
+                      />
+                    </td>
+                    
+                    <td>
+                      <input
+                        name="btnEquals"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Equal.gif)"
+                        onclick="Operation('=')"
+                      />
+                    </td>
+                    
+                    
+                    <td>
+                      <input
+                        name="btnMultiply"
+                        type="button"
+                        value="    "
+                        style="background: url(assets/Multiply.gif)"
+                        onclick="Operation('*')"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <b> </b>
+    </form>
+    
+      <script type="text/javascript">
+        
+        var formCal = document.Keypad;
+        var Accum = 0;
+        var FlagNewNum = false;
+        var PendingOp = "";
+        function NumPressed(Num) {
+          if (FlagNewNum) {
+            console.log('SSS' + formCal.outPut.value);
+            console.log('Num' + Num);
+            formCal.outPut.value = Num;
+            FlagNewNum = false;
+          } else {
+            console.log(formCal.outPut.value);
+            if (formCal.outPut.value == "0") formCal.outPut.value = Num;
+            else formCal.outPut.value += Num;
+          }
+        }
+        function Operation(Op) {
+          var outPut = formCal.outPut.value;
+          if (FlagNewNum && PendingOp != "=");
+          else {
+            FlagNewNum = true;
+            if ("+" == PendingOp) Accum += parseFloat(outPut);
+            else if ("-" == PendingOp) Accum -= parseFloat(outPut);
+            else if ("/" == PendingOp) Accum /= parseFloat(outPut);
+            else if ("*" == PendingOp) Accum *= parseFloat(outPut);
+            else Accum = parseFloat(outPut);
+            formCal.outPut.value = Accum;
+            PendingOp = Op;
+          }
+          if (Op != "=") {
+            formCal.outPut.value = '';
+          }
+        }
+        function Decimal() {
+          var curoutPut = formCal.outPut.value;
+          if (FlagNewNum) {
+            curoutPut = "0.";
+            FlagNewNum = false;
+          } else {
+            if (curoutPut.indexOf(".") == -1) curoutPut += ".";
+          }
+          formCal.outPut.value = curoutPut;
+        }
+        function ClearEntry() {
+          formCal.outPut.value = "0";
+          FlagNewNum = true;
+        }
+        function Clear() {
+          Accum = 0;
+          PendingOp = "";
+          ClearEntry();
+        }
+        function Neg() {
+          formCal.outPut.value = parseFloat(formCal.outPut.value) * -1;
+        }
+        function Percent() {
+          formCal.outPut.value =
+            (parseFloat(formCal.outPut.value) / 100) * parseFloat(Accum);
+        }
+        
+      </script>
+    
+  </body>
+</html>

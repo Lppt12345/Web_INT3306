@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+          <h2 style="margin-top: 0px; text-align: center">REGISTER FORM</h2>
+        </div>
+        <form id="form1" action="">
+          <div>
+            <label class="HangMoi">Full Name</label>
+            <input type="text" id="hoten" name="hoten" class="TruongBatbuoc" />
+            <span id="loi_hoten" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Address:</label>
+            <input type="text" id="diachi" name="diachi" />
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Sex</label>
+  
+            <label class="radio-container">
+              <input type="radio" name="sex" id="nam" name="gioitinh" checked="checked" value="nam"/>
+              Male
+              <span class="checkmark"></span>
+              <span class="checkmark2"></span>
+            </label>
+  
+            <label class="radio-container">
+              <input type="radio" name="sex" id="nu" name="gioitinh" value="nu"/> Female
+              <span class="checkmark"></span>
+              <span class="checkmark2"></span>
+            </label>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Age</label>
+            <input
+              type="text"
+              id="ngaysinh"
+              name="ngaysinh"
+              class="TruongBatbuoc"
+            />
+            <span id="loi_ngaysinh" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">E-mail</label>
+            <input type="text" id="email" name="email" class="TruongBatbuoc" />
+            <span id="loi_email" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Phone</label>
+            <input
+              type="text"
+              id="codinh"
+              name="codinh"
+              onkeyup="javascript:DoKeyup(event, this, 'english');"
+            />
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Course</label>
+  
+            <label class="checkbox-container">
+              <input
+                type="checkbox"
+                id="english"
+                name="english"
+                onkeyup="javascript:DoKeyup(event, this, 'quantri');"
+              />
+              English
+              <span class="checkmark"></span>
+              <span class="checkmark2"></span>
+            </label>
+  
+            <label class="checkbox-container">
+              <input
+                type="checkbox"
+                id="quantri"
+                name="quantri"
+                onkeyup="javascript:DoKeyup(event, this, 'it');"
+              />
+              Buisness
+              <span class="checkmark"></span>
+              <span class="checkmark2"></span>
+            </label>
+  
+            <label class="checkbox-container">
+              <input
+                type="checkbox"
+                id="it"
+                name="it"
+                onkeyup="javascript:DoKeyup(event, this, 'username');"
+              />
+              IT
+              <span class="checkmark"></span>
+              <span class="checkmark2"></span>
+            </label>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">User Name</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="TruongBatbuoc"
+              onkeyup="javascript:DoKeyup(event, this, 'pass');"
+            />
+            <span id="loi_username" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Password</label>
+            <input
+              type="password"
+              id="pass"
+              name="pass"
+              class="TruongBatbuoc"
+              onkeyup="javascript:DoKeyup(event, this, 'repass');"
+            />
+            <span id="loi_pass" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Re-Password</label>
+            <input
+              type="password"
+              id="repass"
+              name="repass"
+              class="TruongBatbuoc"
+              onkeyup="javascript:DoKeyup(event, this, 'ghichu');"
+            />
+            <span id="loi_repass" class="Baoloi"></span>
+            <br />
+          </div>
+          <div>
+            <label class="HangMoi">Comment</label>
+            <textarea id="ghichu" name="ghichu"></textarea>
+            <br />
+          </div>
+  
+          <div>
+            <label class="HangMoi">&nbsp;</label>
+            <input type="button" onclick="Chapnhan();" value="Submit" />
+            <input type="reset" value="Reset" />
+            <br />
+          </div>
+        </form>
+        <span class="Ketqua" id="Ketqua" name="Ketqua"></span>
+        <script src="checkForm.js"></script>
+</body>
+</html>
